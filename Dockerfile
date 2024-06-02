@@ -12,14 +12,14 @@ RUN apt-get update && apt-get install -y \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Install Streamlit and any other necessary dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-
 # Set the working directory in the container
 WORKDIR /app
 
 # Copy the Streamlit app file into the container
 COPY . /app
+
+# Install Streamlit and any other necessary dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the Streamlit port
 EXPOSE 8501
