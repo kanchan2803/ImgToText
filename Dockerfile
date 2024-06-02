@@ -18,6 +18,8 @@ WORKDIR /app
 # Copy the Streamlit app file into the container
 COPY . /app
 
+RUN apt-get update && apt-get install -y libgl1-mesa-glx
+
 # Install Streamlit and any other necessary dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
