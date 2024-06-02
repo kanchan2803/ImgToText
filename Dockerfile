@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.8-slim
+FROM python:3.11
 
 # Set environment variables to avoid user interaction during package installation
 ENV DEBIAN_FRONTEND=noninteractive
