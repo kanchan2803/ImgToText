@@ -2,7 +2,7 @@ import pytesseract
 import cv2
 
 #add your tesseract path here 
-pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
+#pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
 myconfig = r"--psm 11 --oem 3"
 
